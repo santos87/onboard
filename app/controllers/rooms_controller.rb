@@ -51,7 +51,7 @@ class RoomsController < ApplicationController
   private
   def room_params
   	# shortcut for whitelisting form date
-  	params.require(:room).permit(:title, :address, :description, :max_guests, :bedrooms, :price)
+  	params.require(:room).permit(:title, :address, :description, :max_guests, :bedrooms, :price, :image)
   end
 
 end

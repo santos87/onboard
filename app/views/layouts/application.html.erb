@@ -24,6 +24,9 @@
     <nav class="seven columns">
 
       <% if current_user.present? %> 
+
+        <% image_tag current_user.avatar(.thumbnail) %>
+        
         ID: <strong><%= current_user.username %></strong>
 
         <%= link_to "Dashboard", "#" %>
